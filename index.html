@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vellum | Backend Books</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="splitting.min.js"></script>
+
+
+
+  </head>
+  <body>
+
+<div id="intro">
+  <div id="window">
+
+
+        <p>Hello and welcome to this short text about a thirteen year old boy with alzheimers (in Norwegian)
+    <br> <br>
+    Before you start reading the text, please note that the letters in this text are very sensitive: if you touch them they will disappear.
+    <br><br>
+    Move your cursor carefully and try to be thoughtful of the readers that come after you, so that they also might enjoy the text.
+    <br><br>
+    <span id="enter" onclick="enter()">Click here to enter </span>
+<br><br>
+    <a href="vellum.html"
+   onclick="window.open(this.href,'targetWindow',
+                                   `toolbar=no,
+                                    location=no,
+                                    status=no,
+                                    menubar=no,
+                                    scrollbars=yes,
+                                    resizable=yes,
+                                    width=800,
+                                    height=500`);
+ return false;" class="small">(or read the original text)</a>
+
+        </p>
+  </div>
+
+</div>
+
+<div class="textContainer">
+
+<div id="side">
+  <img class="image" id="photo" src="vellumramme.jpg" alt="">
+<p class="tittel"> Vellum</p>
+<p id="byline"> Truls Bauer</p>
+</div>
+
+
+  <div id="main">
+
+
+
+    <p id="text">
+</p>
+
+</div>
+</div>
+
+
+    <script src="script.js"></script>
+
+    </script>
+  </body>
+</html>
